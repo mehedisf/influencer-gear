@@ -4,6 +4,13 @@
 header{
     margin-left: 30px;
 }
+.header-banner:hover .banner-img{
+    transform: scale(1.2);
+    transition: transform 2s  ease-in;
+}
+.header-banner:hover .banner-info{
+    color: blue;
+}
 
 
 p{
@@ -22,6 +29,7 @@ p{
     padding: 5px;
     border-radius: 5px;
     font-size:10px;
+
     
 }
 .banner-img img{
@@ -53,9 +61,14 @@ main{
 h2{
     text-align: center;
 }
+.container .products .product:hover .product-banner{
+    transform: scale(1.1);
+    transition: transform 1.5s ease-in;
+}
 .product{
     box-shadow:10px 10px 10px gray;
     border-radius: 5px;
+    overflow: hidden;
 }
 .product .product-banner img{
     width: 200px;
@@ -84,3 +97,81 @@ h2{
     grid-row-gap: 20px;
     
 }
+/* Added link button adv  */
+.link-button-adv{
+    text-decoration: none;
+    color:rgb(228, 41, 140);
+}
+.link-button-div{
+    
+text-align: right;
+}
+/* bonus part style */
+
+.title{
+    text-align: center;
+    font-size: 1.5em;
+    color:steelblue;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 20px 15px;
+    margin-top: 40px;
+    padding: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.team-member{
+    height: 200px;
+    width: 180px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 0 0.6px ;
+    padding-left: 20px;
+    border-radius:5px;
+    background-color: rgb(219, 190, 219);
+}
+.team-member img{
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+}
+.member-info{
+    position:absolute;
+    text-align: center;
+    display:none;
+    color: whitesmoke;
+    font-size: 10px;
+
+}
+.team-member:hover .member-info{
+    display: block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.329);
+    transition: 1s ease-in-out;
+}
+.team-member:hover{
+    transform: scale(1.1);
+}
+/* Footer  */
+footer{
+    text-align: center;
+    background-color: rgb(34, 34, 87);
+    color: white;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.footer-icon{
+
+    margin-bottom: 10px;
+}
+ .fa-instagram,.fa-facebook ,.fa-envelope-open,.fa-twitter-square{
+     margin-right: 5px;
+ }
+ 
