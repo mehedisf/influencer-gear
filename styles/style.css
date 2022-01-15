@@ -32,7 +32,7 @@ p{
 
     
 }
-.banner-img img{
+.banner-thumbnail img{
     width: 80%;
 }
 hr{
@@ -134,7 +134,8 @@ text-align: right;
     box-shadow: 0 0 0.6px ;
     padding-left: 20px;
     border-radius:5px;
-    background-color: rgb(219, 190, 219);
+    background-color:skyblue;
+    box-shadow: 8px 8px 8px;
 }
 .team-member img{
     width: 150px;
@@ -179,6 +180,7 @@ footer{
  @media only screen and (max-width:688px){
      .container{
          width: 100%;
+         text-align: center;
      }
      .header-banner,.products,.team-members{
          grid-template-columns: repeat(1,1fr);
@@ -189,20 +191,27 @@ footer{
          font-size: 20px;
      }
  }
- /* tablet device  */
- @media only screen and (min-width: 688px)and (max-width:992px){
-    .container{
-        width: 100%;
-    }
-    .header-banner{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .products{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .team-members{
-        grid-template-columns: repeat(2,1fr);
-        
-        
-    }
-  } 
+ @media only screen and(min-width:688px) and (max-width:992px) {
+     .container{
+         width: 100%;
+         text-align: center;
+     }
+     .header-banner,.products,.team-members{
+         grid-template-columns: repeat(2,1fr);
+         
+     }
+
+     
+ }
+ @media only screen and(min-width:992px) and (max-width:1824px) {
+     .container{
+         width: 100%;
+     }
+     .header-banner{
+         grid-template-columns: repeat(2,1fr);
+     }
+     .products,.team-members{
+         grid-template-columns: repeat(3,1fr);
+     }
+ }
+ 
