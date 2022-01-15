@@ -174,4 +174,30 @@ footer{
  .fa-instagram,.fa-facebook ,.fa-envelope-open,.fa-twitter-square{
      margin-right: 5px;
  }
- 
+ /* website Responsive  */
+ /* mobile device  */
+ @media only screen and (max-width:688px){
+     .container{
+         width: 100%;
+     }
+     .header-banner,.products,.team-members{
+         grid-template-columns: repeat(1,1fr);
+         
+         
+     }
+     h1{
+         font-size: 20px;
+     }
+ }
+ /* tablet device  */
+ @media only screen and (min-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .header-banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .products,.team-members{
+        grid-template-columns: repeat(2,1fr);
+    }
+  } 
