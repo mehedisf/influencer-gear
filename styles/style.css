@@ -203,15 +203,3 @@ footer{
 
      
  }
- @media only screen and(min-width:992px) and (max-width:1824px) {
-     .container{
-         width: 100%;
-     }
-     .header-banner{
-         grid-template-columns: repeat(2,1fr);
-     }
-     .products,.team-members{
-         grid-template-columns: repeat(3,1fr);
-     }
- }
- 
